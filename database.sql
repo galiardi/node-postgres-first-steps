@@ -1,22 +1,22 @@
-CREATE DATABASE library;
+CREATE DATABASE LIBRARY;
 CREATE TABLE books(
-  section int,
-  title text,
-  author text
+  SECTION INT,
+  title TEXT,
+  author TEXT
 );
 INSERT INTO books
 VALUES (1, 'Foundation', 'Isaac Asimov');
 
-insert into books values
+INSERT INTO books VALUES
   (2, 'Fortress', 'Dan Brown'),
   (3, 'Data structures', 'Nate Murray');
 
-create table users (
-  id int primary key,
-  name text unique, 
-  password text
+CREATE TABLE users (
+  ID INT PRIMARY KEY,
+  name TEXT UNIQUE, 
+  password TEXT
 );
 
-INSERT INTO users values
+INSERT INTO users VALUES
   (1, 'Pablo', 'pablito');
   
