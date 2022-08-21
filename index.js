@@ -11,7 +11,7 @@ const pool = new Pool(config);
 
 const getBooks = async () => {
   try {
-    const res = await pool.query("select * from books");
+    const res = await pool.query("SELECT * FROM books;");
     console.log(res.rows);
   } catch (err) {
     console.log(err);
@@ -20,7 +20,7 @@ const getBooks = async () => {
 
 const insertUser = async (name, password) => {
   try {
-    const query = `INSERT INTO users (id, name, password) VALUES (4, '${name}', '${password}')`;
+    const query = `INSERT INTO users (id, name, password) VALUES (4, '${name}', '${password}');`;
     const res = await pool.query(query);
     console.log(res);
   } catch (err) {
@@ -30,7 +30,7 @@ const insertUser = async (name, password) => {
 
 const getUsers = async () => {
   try {
-    const res = await pool.query("select * from users");
+    const res = await pool.query("SELECT * FROM users;");
     console.log(res.rows);
   } catch (err) {
     console.log(err);
