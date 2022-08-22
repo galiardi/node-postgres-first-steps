@@ -1,6 +1,6 @@
 CREATE DATABASE LIBRARY;
 CREATE TABLE books(
-  SECTION INT,
+  section INT,
   title TEXT,
   author TEXT
 );
